@@ -1,13 +1,20 @@
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .card-grid-3 {
+        display: flex !important;
+        flex-direction: column !important ;
+        align-items: center !important;
+    }
+    .card-grid-4 {
+        display: flex !important;
+        flex-direction: column !important ;
+        align-items: center !important;
+    }
+    .footer-Content{
+        display: flex !important;
+        flex-direction: column !important ;
+        align-items: center !important;
     }
 
-    .nav-section{
-        margin: 0;
-        padding: 0;
-    }
 }
 
 
