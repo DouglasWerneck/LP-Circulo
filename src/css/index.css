@@ -1,4 +1,10 @@
 @media screen and (min-width: 320px) and (max-width: 768px){
+
+    .header-content{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
     .card-grid-3 {
         display: flex !important;
         flex-direction: column !important ;
@@ -14,6 +20,49 @@
         flex-direction: column !important ;
         align-items: center !important;
     }
+
+    .btn-inscricao{
+        width: 250px !important;
+    }
+    .icon-content img{
+        width: 250px !important;
+    }
+    .agendamento-button a {
+        width: 250px !important;
+    }
+    .footer-content-left img{
+        width: 250px;
+    }
+    .agenda-evento-img img {
+        width: 250px;
+    }
+    .footer-content-buton a {
+        width: 250px;
+    }
+    .novidades-button a {
+        width: 250px;
+    }
+    .footer-content-left{
+        margin: 0 !important;
+    }
+    .footer-content-right{
+        margin: 0 !important;
+    }
+    .footer-content-about{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 17px !important;
+    align-items: flex-start !important;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-section{
+        display: none;
+    }
+    
 
 }
 
