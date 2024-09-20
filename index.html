@@ -188,9 +188,17 @@
 </div>
 <script>
     function toggleMenu() {
-      var menu = document.getElementById("nav-menu");
-      menu.classList.toggle("active");
+        var menu = document.getElementById("nav-menu");
+        var menuIcon = document.querySelector(".mobile-menu img");
+
+        menu.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+            menuIcon.src = "./src/img/close.png"; 
+        } else {
+            menuIcon.src = "./src/img/menu.png"; 
+        }
     }
-  </script>
+</script>
 </body>
 </html>
