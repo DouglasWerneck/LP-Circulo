@@ -45,6 +45,7 @@
     }
     .footer-content-left{
         margin: 0 !important;
+        text-align: center !important;
     }
     .footer-content-right{
         margin: 0 !important;
@@ -398,6 +399,8 @@ nav{
 }
 .footer-content-right{
     margin-right: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content-right img {
