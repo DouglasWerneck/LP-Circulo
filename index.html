@@ -16,8 +16,10 @@
             <nav class="nav-bar">
                 <div class="logo">
                     <img src="./src/img/circuloIcon.png" alt="Logo Círculo">
+                    <a href="javascript:void(0);" class="mobile-menu" onclick="toggleMenu()">
+                        <img src="./src/img/menu.png" alt="Menu">
                 </div>
-                <ul class="nav-menu">
+                <ul id="nav-menu" class="nav-menu">
                     <li><a href="#sobre">Sobre o evento</a></li>
                     <li><a href="#agenda">Agenda</a></li>
                     <li><a href="#sobre-nos">Sobre nós</a></li>
@@ -184,6 +186,11 @@
     </div>
 
 </div>
-
+<script>
+    function toggleMenu() {
+      var menu = document.getElementById("nav-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>

@@ -114,12 +114,36 @@
     .logo{
         height: 60px;
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    .mobile-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    /* Esconder o menu inicialmente em telas pequenas */
+    #nav-menu {
+        display: none;
         flex-direction: column;
-        justify-content: center;
+    }
+
+    /* Quando o menu for aberto */
+    #nav-menu.active {
+        display: flex;
+    }
+    .mobile-menu{
+        display: block !important;
     }
 
 }
-
+.mobile-menu{
+    display: none;
+}
 
 html {
     scroll-behavior: smooth;
