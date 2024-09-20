@@ -99,11 +99,11 @@
 
     .nav-section ul li a {
         font-size: 18px;
-        padding: 10px 20px;
         border-radius: 5px;
         text-align: center;
         width: 100%;
         font-weight: 700;
+        margin: 0 !important;
     }
 
     .nav-bar{
