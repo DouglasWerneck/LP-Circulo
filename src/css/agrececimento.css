@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0c16;
+    background-image: url('../img/backgroundAgradecimento.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: #00e7ff;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #a3b1c2;
+    margin-bottom: 20px;
+}
+
+.footer img {
+    width: 150px;
+}
