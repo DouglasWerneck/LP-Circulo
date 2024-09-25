@@ -150,21 +150,22 @@
             <p>Preencha o formulário e garanta sua vaga.</p>
         </div>
         
-        <div class="footer-content-form" id="inscricao">
+
+                <div class="footer-content-form" id="inscricao">
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5e000004hfcw" method="POST">
                 <input type="hidden" name="oid" value="00D5e000004hfcw">
-                <input type="hidden" name="retURL" value="http://circulocrm.com.br">
+                <input type="hidden" name="retURL" value="./src/pages/agradecimento.html">
         
                 <div class="form-container">
                     <div class="form-section">
-                        <input type="text" name="first_name" id="first_name" placeholder="Nome" maxlength="40" size="20" />
-                        <input type="text" name="last_name" id="last_name" placeholder="Sobrenome" maxlength="80" size="20" />
-                        <input type="email" name="email" id="email" placeholder="Email corporativo" maxlength="80" size="20" />
+                        <input type="text" name="first_name" id="first_name" placeholder="Nome" maxlength="40" size="20" required />
+                        <input type="text" name="last_name" id="last_name" placeholder="Sobrenome" maxlength="80" size="20" required />
+                        <input type="email" name="email" id="email" placeholder="Email corporativo" maxlength="80" size="20" required />
                     </div>
                     <div class="form-section">
-                        <input type="text" name="phone" id="phone" placeholder="Telefone">
-                        <input type="text" name="company" id="company" placeholder="Empresa" maxlength="40" size="20" />
-                        <input type="text" name="title" id="title" placeholder="Cargo" maxlength="40" size="20" />
+                        <input type="text" name="phone" id="phone" placeholder="Telefone" required>
+                        <input type="text" name="company" id="company" placeholder="Empresa" maxlength="40" size="20" required/>
+                        <input type="text" name="title" id="title" placeholder="Cargo" maxlength="40" size="20" required/>
                     </div>
                 </div>
         
