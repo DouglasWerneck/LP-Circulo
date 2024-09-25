@@ -151,24 +151,47 @@
         </div>
         
         <div class="footer-content-form" id="inscricao">
-            <form action="#" method="POST">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5e000004hfcw" method="POST">
+                <input type="hidden" name="oid" value="00D5e000004hfcw">
+                <input type="hidden" name="retURL" value="http://circulocrm.com.br">
+        
                 <div class="form-container">
                     <div class="form-section">
-                        <input type="text" name="nome" placeholder="Nome">
-                        <input type="text" name="sobrenome" placeholder="Sobrenome">
-                        <input type="email" name="email" placeholder="Email corporativo">
+                        <input type="text" name="first_name" id="first_name" placeholder="Nome" maxlength="40" size="20" />
+                        <input type="text" name="last_name" id="last_name" placeholder="Sobrenome" maxlength="80" size="20" />
+                        <input type="email" name="email" id="email" placeholder="Email corporativo" maxlength="80" size="20" />
                     </div>
                     <div class="form-section">
-                        <input type="text" name="telefone" placeholder="Telefone">
-                        <input type="text" name="empresa" placeholder="Empresa">
-                        <input type="text" name="cargo" placeholder="Cargo">
+                        <input type="text" name="phone" id="phone" placeholder="Telefone">
+                        <input type="text" name="company" id="company" placeholder="Empresa" maxlength="40" size="20" />
+                        <input type="text" name="title" id="title" placeholder="Cargo" maxlength="40" size="20" />
                     </div>
                 </div>
-            </form>
-        </div>
         
-        <div class="footer-content-buton">
-            <a href="./src/pages/agradecimento.html" class="btn-submit">Garantir minha vaga</a>
+                <div class="form-section">
+                    <label for="lead_source">Lead Source</label>
+                    <select id="lead_source" name="lead_source">
+                        <option value="">--Nenhum--</option>
+                        <option value="Advertisement">Advertisement</option>
+                        <option value="Employee Referral">Employee Referral</option>
+                        <option value="External Referral">External Referral</option>
+                        <option value="Partner_SF">Partner Salesforce</option>
+                        <option value="Partner Insider">Partner Insider</option>
+                        <option value="Partner_MB">Partner Message Bird</option>
+                        <option value="Partner_AC">Partner Active</option>
+                        <option value="Webinar_Live">Webinar/Live</option>
+                        <option value="Site">Site</option>
+                        <option value="Círculo_Networking">Círculo Networking</option>
+                        <option value="Other">Other</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Client">Client</option>
+                    </select>
+                </div>
+        
+                <div class="footer-content-buton">
+                    <button type="submit" class="btn-submit">Garantir minha vaga</button>
+                </div>
+            </form>
         </div>
         
 
